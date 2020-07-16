@@ -15,8 +15,8 @@ public class KafkaTopicConfig {
   @Bean
   public NewTopic topicExample() {
     return TopicBuilder.name(topic)
-      .partitions(6)
-      .replicas(3)
+      .partitions(1)
+      .replicas(1)
       .build();
   }
 }
